@@ -1,0 +1,94 @@
+:root {
+    --light: #013141;
+    --dark: #001F29;
+    --task-card:#FAF7F3;
+    --del:#EA5B6F;
+    --warn:#FDF5AA;
+    --text:#17313E;
+    --done:#E8FFD7;
+}
+@font-face {
+    font-family:"lato";
+    src: url(../WebFonts/Lato-Bold.ttf);
+}
+
+body {
+    background: #16222A;
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+    background: linear-gradient(to right, #3A6073, #16222A);
+    font-family:"lato";
+
+}
+.search-section .container {
+    min-height: 60vh;
+}
+img{
+    width:100%;
+}
+.searc-img {
+    width:260px;
+    height:260px;
+}
+.search input {
+    background-color: var(--light);
+}
+.search input:focus {
+    background-color: var(--light);
+}
+.search input::placeholder{
+    color: white;
+    letter-spacing: 1.5px;
+    padding-left: 3%;
+}
+.search button {
+    padding-right:50px;
+    padding-left: 50px;
+    background-color: var(--dark);
+    transition: 1s all;
+}
+.search button:hover {
+    background-color: var(--dark);
+    transform: scale(110%);
+}
+.search {
+   padding-top: 50px;
+}
+.task,
+.task-checked{
+    padding: 30px 60px 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    gap:3%;
+    background-color: var(--task-card);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 5%;
+}
+.task-checked {
+   background-color: var(--done);
+}
+.do{
+    font-size: 1.5rem;
+    color:var(--text);
+}
+.warning p {
+    font-size: 30px;
+    color:var(--warn);
+    
+}
+.task p {
+    letter-spacing: 2px;
+    
+}
+.check-btn {
+    background-color: var(--dark);
+}
+.delete-btn{
+    background-color: var(--del);
+
+}
+i {
+    color:white;
+}
+.search-list{
+    width:50%;
+} 
